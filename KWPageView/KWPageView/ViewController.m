@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "KWPageView.h"
 
 @interface ViewController ()
 
@@ -14,14 +15,14 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    KWPageView *pageView = [KWPageView pageView];
+    pageView.frame = CGRectMake(0, 100, 300, 200);
+    pageView.images = @[@"img_00", @"img_01", @"img_02", @"img_03", @"img_04"];
+    pageView.currentColor = [UIColor redColor];
+    pageView.otherColor = [UIColor whiteColor];
+    [self.view addSubview:pageView];
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 @end

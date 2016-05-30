@@ -13,6 +13,8 @@
 		266333981CFBD06E00A3B687 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 266333961CFBD06E00A3B687 /* Main.storyboard */; };
 		2663339A1CFBD06E00A3B687 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 266333991CFBD06E00A3B687 /* Assets.xcassets */; };
 		2663339D1CFBD06E00A3B687 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2663339B1CFBD06E00A3B687 /* LaunchScreen.storyboard */; };
+		266333A71CFBD37A00A3B687 /* KWPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 266333A61CFBD37A00A3B687 /* KWPageView.m */; };
+		266333A91CFBD38400A3B687 /* KWPageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 266333A81CFBD38400A3B687 /* KWPageView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		266333991CFBD06E00A3B687 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2663339C1CFBD06E00A3B687 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2663339E1CFBD06E00A3B687 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		266333A51CFBD37A00A3B687 /* KWPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWPageView.h; sourceTree = "<group>"; };
+		266333A61CFBD37A00A3B687 /* KWPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWPageView.m; sourceTree = "<group>"; };
+		266333A81CFBD38400A3B687 /* KWPageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KWPageView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +63,12 @@
 		2663338C1CFBD06E00A3B687 /* KWPageView */ = {
 			isa = PBXGroup;
 			children = (
+				266333961CFBD06E00A3B687 /* Main.storyboard */,
 				266333901CFBD06E00A3B687 /* AppDelegate.h */,
 				266333911CFBD06E00A3B687 /* AppDelegate.m */,
 				266333931CFBD06E00A3B687 /* ViewController.h */,
 				266333941CFBD06E00A3B687 /* ViewController.m */,
-				266333961CFBD06E00A3B687 /* Main.storyboard */,
-				266333991CFBD06E00A3B687 /* Assets.xcassets */,
-				2663339B1CFBD06E00A3B687 /* LaunchScreen.storyboard */,
-				2663339E1CFBD06E00A3B687 /* Info.plist */,
+				266333A41CFBD35F00A3B687 /* KWPageView */,
 				2663338D1CFBD06E00A3B687 /* Supporting Files */,
 			);
 			path = KWPageView;
@@ -74,9 +77,22 @@
 		2663338D1CFBD06E00A3B687 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				266333991CFBD06E00A3B687 /* Assets.xcassets */,
+				2663339B1CFBD06E00A3B687 /* LaunchScreen.storyboard */,
+				2663339E1CFBD06E00A3B687 /* Info.plist */,
 				2663338E1CFBD06E00A3B687 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		266333A41CFBD35F00A3B687 /* KWPageView */ = {
+			isa = PBXGroup;
+			children = (
+				266333A51CFBD37A00A3B687 /* KWPageView.h */,
+				266333A61CFBD37A00A3B687 /* KWPageView.m */,
+				266333A81CFBD38400A3B687 /* KWPageView.xib */,
+			);
+			name = KWPageView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2663339D1CFBD06E00A3B687 /* LaunchScreen.storyboard in Resources */,
+				266333A91CFBD38400A3B687 /* KWPageView.xib in Resources */,
 				2663339A1CFBD06E00A3B687 /* Assets.xcassets in Resources */,
 				266333981CFBD06E00A3B687 /* Main.storyboard in Resources */,
 			);
@@ -151,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				266333951CFBD06E00A3B687 /* ViewController.m in Sources */,
+				266333A71CFBD37A00A3B687 /* KWPageView.m in Sources */,
 				266333921CFBD06E00A3B687 /* AppDelegate.m in Sources */,
 				2663338F1CFBD06E00A3B687 /* main.m in Sources */,
 			);
@@ -299,6 +317,7 @@
 				266333A31CFBD06E00A3B687 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
